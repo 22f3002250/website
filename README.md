@@ -46,7 +46,8 @@ npm run build
 - Journey: Storytelling about section
 - Technical Map: Skills organized as territories
 - Projects: Cinematic project showcases
-- Explorer: Travel personality
+- Explorer: Travel personality with photo gallery
+- Captured Moments: Photography showcase
 - Creative Side: Hobbies and creativity
 - Timeline: Educational milestones
 - Contact: Connection section
@@ -57,6 +58,7 @@ Update personal information in the component files:
 - Contact details in `src/components/Contact.jsx`
 - Projects in `src/components/Projects.jsx`
 - Timeline events in `src/components/Timeline.jsx`
+- Images in `public/images/`
 
 ## License
 
