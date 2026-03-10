@@ -5,33 +5,39 @@ import { Code, Server, Database, Brain, BarChart3 } from 'lucide-react'
 const territories = [
   {
     icon: Code,
-    title: 'Frontend Territory',
+    title: 'Languages',
     color: 'electric',
-    skills: ['React', 'Vue.js', 'Tailwind CSS', 'Bootstrap', 'Framer Motion', 'Responsive Design']
+    skills: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL']
   },
   {
     icon: Server,
-    title: 'Backend Territory',
+    title: 'Web Development',
     color: 'teal',
-    skills: ['Node.js', 'Express', 'Flask', 'REST APIs', 'JWT Auth', 'Celery', 'Redis']
-  },
-  {
-    icon: Brain,
-    title: 'Data & AI Lab',
-    color: 'purple',
-    skills: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'ML Pipelines', 'Predictive Modeling']
+    skills: ['React.js', 'Next.js', 'Vue.js', 'Node.js', 'Express.js', 'FastAPI', 'Flask', 'REST APIs', 'JWT']
   },
   {
     icon: Database,
-    title: 'Database Realm',
+    title: 'Databases',
+    color: 'purple',
+    skills: ['MongoDB', 'PostgreSQL', 'SQLite']
+  },
+  {
+    icon: Brain,
+    title: 'AI / ML',
     color: 'electric',
-    skills: ['MongoDB', 'MySQL', 'SQLite', 'Data Modeling', 'Query Optimization']
+    skills: ['Scikit-learn', 'PyTorch', 'HuggingFace Transformers', 'MediaPipe', 'OpenCV', 'OpenAI API', 'Gemini API', 'Llama3']
   },
   {
     icon: BarChart3,
-    title: 'Business Intelligence',
+    title: 'Data Science',
     color: 'teal',
-    skills: ['Data Analytics', 'EDA', 'Forecasting', 'Reporting', 'Business Insights']
+    skills: ['Pandas', 'NumPy', 'EDA', 'PCA', 'Regression', 'Classification', 'Time-Series Forecasting', 'Random Forest', 'Gradient Boosting']
+  },
+  {
+    icon: Code,
+    title: 'Tools & Technologies',
+    color: 'purple',
+    skills: ['Git', 'GitHub API', 'Docker', 'Redis', 'Celery', 'Puppeteer', 'Vercel', 'Tailwind CSS', 'Bootstrap']
   }
 ]
 

@@ -16,16 +16,16 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl md:text-7xl font-bold mb-8 leading-tight">
-            Let's Build Something That{' '}
-            <span className="gradient-text">Travels Far</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            Let’s Build Something Awesome Together Have an idea or project in mind? {' '}
+            <span className="gradient-text">Let’s make it real.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-4">
-            Ready to collaborate on your next big idea? Let's connect.
+            Let’s turn your ideas into real products.
           </p>
           <div className="flex items-center justify-center gap-2 text-gray-500">
             <MapPin className="w-4 h-4" />
-            <span>Darbhanga, Bihar • Open to Remote Opportunities</span>
+            <span>Darbhanga, Bihar • Open to Remote and On-site Opportunities</span>
           </div>
         </motion.div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://www.linkedin.com/in/tripti-jha-76153b289"
+              href="https://www.linkedin.com/in/tripti-jha-76153b289?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}
@@ -59,7 +59,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://github.com/22f3002250"
+              href="https://github.com/triptikumari710"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}
@@ -83,7 +83,7 @@ const Contact = () => {
               whileTap={{ scale: 0.95 }}
               className="glow-button relative px-10 py-4 bg-gradient-to-r from-electric to-teal rounded-full text-black font-bold text-lg inline-flex items-center gap-3"
             >
-              <span className="relative z-10">Phone</span>
+              <span className="relative z-10">phone</span>
               <Send className="w-5 h-5 relative z-10" />
             </motion.a>
           </motion.div>

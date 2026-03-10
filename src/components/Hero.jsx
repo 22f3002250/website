@@ -107,7 +107,7 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Download className="w-5 h-5" />
-            <span className="relative z-10">Download Resume</span>
+            <span className="relative z-10">my details</span>
           </motion.a>
         </motion.div>
 

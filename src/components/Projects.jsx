@@ -4,12 +4,51 @@ import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
+    title: 'LLM Automated Code Deployment',
+    tagline: 'AI-Powered Web App Generator',
+    description: 'AI-powered API that converts task briefs into fully generated web apps, automatically creating GitHub repositories and deploying them to GitHub Pages with support for multi-round revisions.',
+    tech: ['Python', 'FastAPI', 'OpenAI API', 'GitHub API', 'REST', 'Automation'],
+    gradient: 'from-purple to-teal',
+    github: 'https://github.com/triptikumari710/TDS_project_1_llm_code_deployment',
+    live: null
+  },
+  {
+    title: 'AI ATS Resume Builder',
+    tagline: 'Smart Resume Optimization Tool',
+    description: 'AI-powered resume builder that analyzes job descriptions to generate ATS-optimized resumes with keyword suggestions, compatibility scoring, and downloadable PDF templates.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'AI (Llama3)', 'TailwindCSS'],
+    gradient: 'from-electric to-teal',
+    github: 'https://github.com/triptikumari710/ai-ats-resume-builder',
+    live: null
+  },
+  {
+    title: 'RepoExplain AI',
+    tagline: 'GitHub Repository Analyzer',
+    description: 'AI-powered tool that analyzes GitHub repositories and generates insights about tech stack, features, and project architecture, with an interactive chat to explore the codebase.',
+    tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Gemini API', 'GitHub API'],
+    gradient: 'from-purple to-electric',
+    github: 'https://github.com/triptikumari710/repoexplain',
+    live: 'https://repoexplain.vercel.app'
+  },
+  {
+    title: 'Emoji AI Detector',
+    tagline: 'Real-Time Gesture & Emotion AI Detection',
+
+    description: 'AI-powered web app that uses computer vision to detect hand gestures and facial emotions from a live webcam feed and display corresponding emojis in real time.',
+
+    tech: ['Next.js', 'FastAPI', 'Python', 'MediaPipe', 'HuggingFace Transformers', 'OpenCV', 'PyTorch'],
+    gradient: 'from-teal to-purple',
+    github: 'https://github.com/triptikumari710/emoji_AI_app',
+    live: null
+  },
+  {
     title: 'Quiz Master V2',
     tagline: 'Enterprise-Grade Quiz Platform',
     description: 'Built with Flask + Vue.js featuring JWT authentication, Celery background jobs, Redis caching, and role-based admin dashboards.',
     tech: ['Flask', 'Vue.js', 'JWT', 'Celery', 'Redis'],
-    gradient: 'from-electric to-teal',
-    github: 'https://github.com/22f3002250/Quiz-Master'
+    gradient: 'from-electric to-purple',
+    github: 'https://github.com/22f3002250/Quiz-Master',
+    live: null
   },
   {
     title: 'Grocery Store Analytics',
@@ -17,7 +56,8 @@ const projects = [
     description: 'Capstone project with advanced EDA, demand forecasting, inventory optimization, and comprehensive business insights reporting.',
     tech: ['Python', 'ML', 'Forecasting', 'Analytics'],
     gradient: 'from-purple to-electric',
-    github: 'https://github.com/22f3002250/bdm_capstone_project'
+    github: 'https://github.com/22f3002250/bdm_capstone_project',
+    live: null
   },
   {
     title: 'ML Pipeline Project',
@@ -25,23 +65,26 @@ const projects = [
     description: 'Regression & Classification models using Random Forest and Gradient Boosting with clean, scalable pipeline architecture.',
     tech: ['scikit-learn', 'Random Forest', 'Gradient Boosting'],
     gradient: 'from-teal to-purple',
-    github: 'https://github.com/22f3002250/Machine_Learning_project'
+    github: 'https://github.com/22f3002250/Machine_Learning_project',
+    live: null
   },
   {
     title: 'Private E-Commerce Platform',
     tagline: 'Full-Stack MERN Marketplace',
     description: 'Complete marketplace with authentication, product management, order system, and secure payment integration.',
     tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-    gradient: 'from-electric to-purple',
-    github: 'https://github.com/22f3002250'
+    gradient: 'from-electric to-teal',
+    github: 'https://github.com/22f3002250',
+    live: null
   },
   {
     title: 'Farmers & Shopkeeper Platform',
     tagline: 'Real-World Business Solution',
     description: 'Full-stack platform with complex business logic, role-based dashboards, and seamless user experience.',
     tech: ['MERN', 'Role-Based Auth', 'Business Logic'],
-    gradient: 'from-teal to-electric',
-    github: 'https://github.com/22f3002250'
+    gradient: 'from-purple to-electric',
+    github: 'https://github.com/22f3002250',
+    live: null
   }
 ]
 
@@ -94,16 +137,30 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    className="flex items-center gap-2 text-electric hover:text-teal transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span className="text-sm">View on GitHub</span>
-                  </motion.a>
+                  {project.github && (
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      className="flex items-center gap-2 text-electric hover:text-teal transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span className="text-sm">View on GitHub</span>
+                    </motion.a>
+                  )}
+                  {project.live && (
+                    <motion.a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      className="flex items-center gap-2 text-teal hover:text-electric transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span className="text-sm">Live Demo</span>
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>
